@@ -26,7 +26,7 @@ services:
     restart: unless-stopped
     # Set DSA_PORT to expose the interface on another port (default 8080).
     ports:
-      - "${DSA_PORT:-8080}:8080"
+      - "9090:9090"
     volumes:
       # Needed to use slicer_cli_web to run docker containers
       - /var/run/docker.sock:/var/run/docker.sock
