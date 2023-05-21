@@ -38,5 +38,7 @@ SLICER_CLI_WEB_SOURCE_FOLDER="${SLICER_CLI_WEB_SOURCE_FOLDER:-${DIR}/../../slice
 if [ -d "$SLICER_CLI_WEB_SOURCE_FOLDER" ]; then
   OPTS+=(--mount "$SLICER_CLI_WEB_SOURCE_FOLDER:/opt/slicer_cli_web/")
 fi
+#Port configuration
+#OPTS+=(-p 9090)
 
 $DIR/../ansible/deploy_docker.py "${OPTS[@]}" $@

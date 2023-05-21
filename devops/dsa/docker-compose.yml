@@ -42,8 +42,8 @@ services:
       - ./logs:/logs
 
       #HistomicsUI
-      - ~/dungpt/histimicsUI/histomicsui.egg-info:/opt/HistomicsUI/histomicsui.egg-info
-      - ~/dungpt/histimicsUI:/opt/HistomicsUI
+      - ~/dungpt/HistomicsUI//histomicsui.egg-info:/opt/HistomicsUI/histomicsui.egg-info
+      - ~/dungpt/HistomicsUI:/opt/HistomicsUI
       # For local development, uncomment the set of mounts associated with the
       # local source files.  Adding the editable egg directories first allows
       # allow mounting source files from the host without breaking the internal
