@@ -27,3 +27,7 @@
 - Navigate back to the dsa folder e.g `cd ~/dungpt/DigitalSlideArchive/devops`
 - Change the default `HISTOMICS_SOURCE_FOLDER` to point at your local folder:
 `export HISTOMICS_TESTDATA_FOLDER=~/dungpt/HistomicsUI`
+- run `devops/build.sh`
+- stop then start the service again:
+`./deploy.sh stop`
+`./deploy.sh start`
